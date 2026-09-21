@@ -60,6 +60,13 @@ body{
     letter-spacing: 2px;
 }
 
+h2::before{
+    content: "—— ";
+}
+
+h2::after{
+    content: " ——";
+}
 @media (max-width: 576px) {
     .title{      font-size: 1.8rem;
     }
