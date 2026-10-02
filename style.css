@@ -1,11 +1,11 @@
-/* Palete Colori e Font */
+/* Palette Colori e Font */
 :root{
     --primary-color: white;
     --secondary-color: #c76849;
     --menu-color:#dab78d;
     --text-color:#414141;
     --font-family: 'Poppins', sans-serif;
-    --font-titoli: 'Edu VIC WA NT hand', cursive;
+    --font-titoli: 'Edu VIC WA NT Hand', cursive;
 }
  /*Permette di fare vedere i titoli allo scroll della pagina tramite menu*/
 html {
