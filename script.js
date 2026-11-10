@@ -3,6 +3,11 @@ function equalizzaAltezzaCard() {
     const cards = document.querySelectorAll('#forza .card');
     if (!cards.length) return;
 
+    // Se una card ha il collapse aperto non ricalcoliamo: altrimenti la sua
+    // altezza "espansa" verrebbe presa come massimo e allungherebbe anche le altre.
+    const collapseAperto = document.querySelector('#forza .collapse.show');
+    if (collapseAperto) return;
+
     cards.forEach(card => card.style.minHeight = '');
 
     const maxHeight = Math.max(...Array.from(cards, card => card.offsetHeight));
@@ -10,8 +15,13 @@ function equalizzaAltezzaCard() {
     cards.forEach(card => card.style.minHeight = maxHeight + 'px');
 }
 
+// Debounce sul resize: senza, il ricalcolo partirebbe decine di volte durante il drag della finestra
+let resizeTimer;
 window.addEventListener('load', equalizzaAltezzaCard);
-window.addEventListener('resize', equalizzaAltezzaCard);
+window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(equalizzaAltezzaCard, 150);
+});
 
 /*Chiude il menu a tendina mobile quando si clicca una voce del menu*/
 document.querySelectorAll('#navbarSupportedContent .nav-link').forEach(link => {
