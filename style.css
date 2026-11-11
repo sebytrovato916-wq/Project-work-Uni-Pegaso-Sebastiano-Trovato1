@@ -11,7 +11,7 @@
 }
  /*Permette di fare vedere i titoli allo scroll della pagina tramite menu*/
 html {
-    scroll-padding-top: 95px;
+    scroll-padding-top: 127px;
 }
  /* Sezione contenuto della pagina*/
 body{
@@ -216,6 +216,8 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
     color: var(--text-sost-color);
     font-weight: 500;
     text-decoration: none;
+    white-space: normal;
+    text-align: center;
 }
 
 #sostenibilita .certificazioni-lista .badge:hover {
@@ -267,7 +269,7 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
     font-size: 1.3rem;
 }
 
-@media (max-width: 768px){
+@media (max-width: 767.98px){
     .hero-title{
         font-size: 3rem;
         text-shadow: 0 2px 12px rgba(0, 0, 0, 0.85);
@@ -280,7 +282,7 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
         padding: 1rem 1rem 2rem;
     }
     .hero{
-        min-height: 72vh;
+        min-height: 90vh;
     }
 
     .stat-number{
@@ -306,14 +308,19 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
         display: block;
         margin-bottom: auto;
     }
+
+    .download-report{
+        width: 100%;
+        border-radius: 0 !important;
+    }
      #download-report h3{
             font-size: 1.5rem;
         }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
     .navbar-nav {
-        gap: 2rem;
-        margin-right: 2rem;
+        gap: 1.25rem;
+        
     }
 }
