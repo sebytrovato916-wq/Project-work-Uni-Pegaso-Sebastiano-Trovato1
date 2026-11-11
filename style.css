@@ -1,4 +1,4 @@
-/* Palette Colori e Font */
+/* I colori e i font del sito */
 :root{
     --primary-color: white;
     --secondary-color: #c76849;
@@ -9,11 +9,11 @@
     --font-titoli: 'Edu VIC WA NT Hand', cursive;
     --font-stats: 'Bodoni Moda', serif;
 }
- /*Permette di fare vedere i titoli allo scroll della pagina tramite menu*/
+ /* Evita che i titoli finiscano sotto l'header fisso quando si naviga con i link del menu */
 html {
     scroll-padding-top: 127px;
 }
- /* Sezione contenuto della pagina*/
+ /* Stile base della pagina*/
 body{
     font-family: var(--font-family);
     color:var(--text-color);
@@ -21,7 +21,7 @@ body{
     line-height: 1.6;
 }
 
-/* Header / Navbar */
+/* Barra in alto con menu (header e navbar) */
 .header{
     background-color: rgba(0, 0, 0, 0.5);
     position: fixed;
@@ -30,9 +30,6 @@ body{
     top: 0;
     backdrop-filter: blur(6px);
 }
-
-
-
 
 .navbar-dark .navbar-nav .nav-link{
     color: var(--primary-color);
@@ -46,7 +43,7 @@ body{
 }
 
 
-/* Hero */
+/* Banner iniziale (hero) */
 .hero{
     min-height: 85vh;
     background-image: linear-gradient(transparent 50%, rgba(0,0,0,0.4)), url(images/hero-bg.jpg);
@@ -68,8 +65,9 @@ body{
     font-size: 1.5rem;
 }
 
+/*Bottone "Scopri di più" e "download report" */
 .btn-light{
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3 ease;
 }
 
 .btn-light:hover{
@@ -77,7 +75,7 @@ body{
 }
 
 
-
+/*Alcune statistiche dell'azienda*/
 .stat-number{
     font-family: var(--font-stats);
     font-size: 3rem;
@@ -101,7 +99,7 @@ body{
 }
 
 
-/* Titoli di sezione */
+/* I titoli delle varie sezioni */
 .title{
     text-align: left;
     font-size: 3.2rem;
@@ -111,7 +109,7 @@ body{
 
 
 
-/*chi siamo*/
+/* Sezione "Chi siamo" */
 .chi-siamo-title-image{
     font-size: 2.2rem;
     font-family: var(--font-titoli);
@@ -140,18 +138,18 @@ body{
 }
 
 
-/* Punti Di Forza */
+/* Sezione "Punti Di Forza" */
 .card-icon{
     width: 50px;
     height: 50px;
 }
-
 
 .card-title {
     font-family:var(--font-titoli);
     color: var(--secondary-color);
 }
 
+/*Le card si sollevano un pò quando ci si passa sopra*/
 #forza .card{
 transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -161,6 +159,7 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/*La freccia si gira quando apri il dettaglio della card*/
 .arrow-toggle {
     border: 1px solid transparent;
     transition: border-color 0.2s ease;
@@ -179,7 +178,8 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
 .arrow-toggle:hover {
     border-color: black;
 }
-/* Sostenibilità */
+
+/* Sezione "Sostenibilità" */
 
 #sostenibilita{
     background-color: #EDF5EA;
@@ -210,6 +210,8 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
     font-family: var(--font-titoli);
     color: var(--text-color);
 }
+
+/*Riquadri delle certificazioni*/
 #sostenibilita .certificazioni-lista .badge {
    background-color: #F3F8F1;
     border: 1px solid #3F5A3C;
@@ -226,6 +228,7 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
     text-decoration: none;
 }
 
+/*Obiettivi dell'azienda*/
 
 .obiettivo_icona {
     width: 40px;
@@ -242,9 +245,9 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
     font-weight: 500;
 }
 
-
+/*Sezione download report di sostenibilità*/
 .download-report{
-    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/1.jpg);
+    background-image: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/immagine-report.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -261,6 +264,8 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
     }
 
    
+/*Footer*/
+
 .footer{
         background-color: var(--text-sost-color);
     }
@@ -268,6 +273,8 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
 .footer .bi{
     font-size: 1.3rem;
 }
+
+/*Media query per il responsive su mobile*/
 
 @media (max-width: 767.98px){
     .hero-title{
@@ -318,6 +325,7 @@ transition: transform 0.2s ease, box-shadow 0.2s ease;
         }
 }
 
+/*Media query su schermi più grandi: più spazio tra le voci del menù*/
 @media (min-width: 992px) {
     .navbar-nav {
         gap: 1.25rem;
