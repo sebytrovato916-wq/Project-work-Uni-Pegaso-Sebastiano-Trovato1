@@ -21,13 +21,13 @@
         <!-- Navbar con logo e menu -->
         <header class="header">
             <nav class="navbar navbar-expand-lg navbar-dark">
-                <div class="container">
+                <div class="container-fluid px-4">
                     <a class="navbar-brand" href="#">
                         <img src="images/logo-azienda.png" alt="Logo azienda Firriato">
                     </a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-label="Apri menu di navigazione">
-                        <i class="bi bi-list text-white fs-1"></i>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" aria-controls="navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-label="Apri menu di navigazione">
+                        <i class="bi bi-list text-white fs-1" aria-hidden="true"></i>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
@@ -35,7 +35,7 @@
                                 <a class="nav-link" href="#chi-siamo">Chi Siamo</a>
                             </li>
                              <li class="nav-item">
-                                <a class="nav-link" href="#forza">Punti Di Forza</a>
+                                <a class="nav-link" href="#forza">Punti di Forza</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#sostenibilita">Sostenibilità</a>
@@ -57,7 +57,7 @@
             <section class="hero text-white d-flex align-items-end">
                 <div class="container-fluid hero-content">
                     <h1 class="hero-title display-4"><strong>Costruiamo il futuro, custodiamo la Sicilia</strong></h1>
-                    <p class="hero-sub lead">Scopri l'impegno che mettiamo per un <strong>FUTURO</strong> più sostenibile,  trasparente e responsabile</p>
+                    <p class="hero-sub lead">Scopri l'impegno che mettiamo per un <strong>FUTURO</strong> più sostenibile, trasparente e responsabile</p>
                     <a href="#chi-siamo" class="btn btn-light btn-lg rounded-pill px-4" aria-label="Scopri di più Chi Siamo">Scopri di più</a>
                 </div>
             </section>
@@ -114,7 +114,7 @@
                                 </li>
 
                                  <li>
-                                    <span class="chi-siamo-year"> Perchè "Firriato"</span>
+                                    <span class="chi-siamo-year"> Perché "Firriato"</span>
                                      <p>Il nome viene dalla cultura contadina della Sicilia occidentale. Il <strong>"firriato"</strong> era l'area protetta vicino alla casa padronale, dove si coltivavano le colture più pregiate, a partire dalla vite.</p>
                                 </li>
                             </ul>
@@ -182,12 +182,12 @@
                         <div class="col pb-5">
                             <div class="card shadow-sm">
                                 <div class="card-body d-flex flex-column align-items-center">
-                                    <img src="images/icon-1.png" alt="Icona sostenibilità" class="card-icon mb-3">
+                                    <img src="images/icon-1.png" alt="" class="card-icon mb-3">
                                     <h3 class="card-title fw-bold">Sostenibilità Ambientale</h3>
                                     <p class="fw-bold">100% Biologico e Impronta Zero</p>
 
-                                    <!-- Bottone per espanere la card e mostrare il testo-->
-                                    <button class="collapsed btn arrow-toggle mt-auto" data-bs-toggle="collapse" data-bs-target="#extra1" aria-label="Mostra dettagli Sostenibilità Ambientale">
+                                    <!-- Bottone per espandere la card e mostrare il testo-->
+                                    <button class="collapsed btn arrow-toggle mt-auto" data-bs-toggle="collapse" data-bs-target="#extra1" aria-expanded="false" aria-controls="extra1" aria-label="Mostra dettagli Sostenibilità Ambientale">
                                         <i class="bi bi-chevron-down" aria-hidden="true"></i>
                                     </button>
 
@@ -201,11 +201,11 @@
                         <div class="col pb-5">
                             <div class="card shadow-sm">
                                 <div class="card-body d-flex flex-column align-items-center">
-                                    <img src="images/icon-2.png"  class="card-icon mb-3" alt="Icona Responsabilità Sociale">
+                                    <img src="images/icon-2.png"  class="card-icon mb-3" alt="">
                                     <h3 class="card-title fw-bold">Responsabilità Sociale</h3>
                                     <p class="fw-bold">Legame con il Territorio e Lavoro Etico</p>
 
-                                    <button class="collapsed btn arrow-toggle mt-auto" data-bs-toggle="collapse" data-bs-target="#extra2" aria-label="Mostra dettagli Responsabilità Sociale">
+                                    <button class="collapsed btn arrow-toggle mt-auto" data-bs-toggle="collapse" data-bs-target="#extra2" aria-expanded="false" aria-controls="extra2" aria-label="Mostra dettagli Responsabilità Sociale">
                                         <i class="bi bi-chevron-down" aria-hidden="true"></i>
                                     </button>
 
@@ -219,11 +219,11 @@
                         <div class="col pb-5">
                             <div class="card shadow-sm">
                                 <div class="card-body d-flex flex-column align-items-center">
-                                    <img src="images/icon-3.png" class="card-icon mb-3" alt="Icona Innovazione e Ricerca" >
+                                    <img src="images/icon-3.png" class="card-icon mb-3" alt="" >
                                     <h3 class="card-title fw-bold">Innovazione e Ricerca</h3>
                                     <p class="fw-bold">Agricoltura di Precisione e Biodiversità</p>
 
-                                    <button class="collapsed btn arrow-toggle mt-auto" data-bs-toggle="collapse" data-bs-target="#extra3" aria-label="Mostra dettagli Innovazione e Ricerca">
+                                    <button class="collapsed btn arrow-toggle mt-auto" data-bs-toggle="collapse" data-bs-target="#extra3" aria-expanded="false" aria-controls="extra3" aria-label="Mostra dettagli Innovazione e Ricerca">
                                         <i class="bi bi-chevron-down" aria-hidden="true"></i>
                                     </button>
 
@@ -237,11 +237,11 @@
                         <div class="col pb-5">
                             <div class="card shadow-sm">
                                 <div class="card-body d-flex flex-column align-items-center">
-                                    <img src="images/icon-4.png" class="card-icon mb-3" alt="Icona Qualità e Tracciabilità" >
+                                    <img src="images/icon-4.png" class="card-icon mb-3" alt="" >
                                     <h3 class="card-title fw-bold">Qualità e Tracciabilità</h3>
                                     <p class="fw-bold">Dalla Terra alla Bottiglia</p>
 
-                                    <button class="collapsed btn arrow-toggle mt-auto" data-bs-toggle="collapse" data-bs-target="#extra4" aria-label="Mostra dettagli Qualità e Tracciabilità">
+                                    <button class="collapsed btn arrow-toggle mt-auto" data-bs-toggle="collapse" data-bs-target="#extra4" aria-expanded="false" aria-controls="extra4" aria-label="Mostra dettagli Qualità e Tracciabilità">
                                         <i class="bi bi-chevron-down" aria-hidden="true"></i>
                                     </button>
 
@@ -254,7 +254,7 @@
                     </div>
                 </div>
             </section>
-            <!--Sezione Sostenibilità (dedicata alla sostenibilità e agli obbiettivi dell'azienda e scaricamento del report)-->
+            <!--Sezione Sostenibilità (dedicata alla sostenibilità e agli obiettivi dell'azienda e scaricamento del report)-->
             <section id="sostenibilita" class="p-3">
                 <div class="container">
                     <h2 class="title py-5"><strong>Sostenibilità</strong></h2>
@@ -271,7 +271,7 @@
                                         <li>Consumo energetico di 0,35 kWh per litro di vino</li>
                                         <li>Consumo d'acqua per litro di vino ridotto dell'87% dal 2019 al 2024</li>
                                         <li>Impianto Fotovoltaico da 432,73 kWp</li>
-                                        <li> Recupero di vitigni autoctoni storici e la protezione dei biotipi unici dell'Etna e di Favignana.</li>
+                                        <li>Recupero di vitigni autoctoni storici e la protezione dei biotipi unici dell'Etna e di Favignana</li>
                                     </ul>
                                 </div>
                             </div>
@@ -284,7 +284,7 @@
                                     <h3 class="card-title fw-bold pb-2">Pilastro Sociale</h3>
                                     <p class="fw-bold">Tuteliamo le persone e il territorio</p>
                                     <ul class="text-start">
-                                        <li>Sicurezza sul lavoro a norma di legge secondo le norme attualmente in vigore</li>
+                                        <li>Sicurezza sul lavoro a norma di legge</li>
                                         <li>Parità salariale e nessuna discriminazione</li>
                                         <li>Promozione della cultura locale attraverso il sostegno a eventi come "Visioni Verticali", "Calici di Stelle" e "Firriato Art Gallery al Vinitaly"</li>
                                         <li>Piano annuale di formazione per i dipendenti su sicurezza e sostenibilità</li>
@@ -342,33 +342,33 @@
                     
                     <!--Obiettivi di sostenibilità dell'azienda-->
                     <div class=" mt-5">
-                        <h3 class="obiettivi_titolo fw-bold mb-3">Obiettivi Di Sostenibilità</h3>
+                        <h3 class="obiettivi_titolo fw-bold mb-3">Obiettivi di Sostenibilità</h3>
                         <p class="obiettivo_sottotitolo fw-semibold mb-4">Il nostro impegno per un futuro sostenibile</p>
                         <div class="row row-cols-1 row-cols-md-2 g-4 justify-content-center">
-                            <div class="col d-flex align-items-start gap-3">
+                            <div class="col d-flex align-items-start gap-3 py-4">
                                 <div class="obiettivo_icona rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 text-white">
-                                    <i class="bi bi-droplet"></i>
+                                    <i class="bi bi-droplet" aria-hidden="true"></i>
                                 </div>
-                                <p class="obiettivo_testo mb-0">Riduzione progressiva dell'uso di risorsa idrica per ogni litro di vino prodotto, con  costante ottimizzazione, manutenzione e adeguamento tecnologico dei depuratori esistenti per riciclare l'acqua in vendemmia</p>
-                            </div>
-
-                            <div class="col d-flex align-items-start gap-3">
-                                <div class="obiettivo_icona rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 text-white">
-                                    <i class="bi bi-cloud"></i>
-                                </div>
-                                <p class="obiettivo_testo mb-0">Impegno per la riduzione delle emissioni di CO<sub>2</sub> per il mantenimento e ottimizzazione dello status di prima cantina italiana certificata <strong>Carbon Neutral</strong> - dall'ente internazionale DNV </p>
+                                <p class="obiettivo_testo mb-0">Riduzione progressiva dell'uso di risorsa idrica per ogni litro di vino prodotto, con costante ottimizzazione, manutenzione e adeguamento tecnologico dei depuratori esistenti per riciclare l'acqua in vendemmia</p>
                             </div>
 
                             <div class="col d-flex align-items-start gap-3 py-4">
                                 <div class="obiettivo_icona rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 text-white">
-                                    <i class="bi bi-box-seam"></i>
+                                    <i class="bi bi-cloud" aria-hidden="true"></i>
                                 </div>
-                                <p class="obiettivo_testo mb-0">Transizione verso un packaging totalmente ecocompatibile,riducendo peso delle bottiglie e utilizzando esclusivamente cartoni riciclati e sugheri certificati a impronta zero</p>
+                                <p class="obiettivo_testo mb-0">Impegno per la riduzione delle emissioni di CO<sub>2</sub> per il mantenimento e ottimizzazione dello status di prima cantina italiana certificata <strong>Carbon Neutral</strong> dall'ente internazionale DNV </p>
                             </div>
 
                             <div class="col d-flex align-items-start gap-3 py-4">
                                 <div class="obiettivo_icona rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 text-white">
-                                    <i class="bi bi-recycle"></i>
+                                    <i class="bi bi-box-seam" aria-hidden="true"></i>
+                                </div>
+                                <p class="obiettivo_testo mb-0">Transizione verso un packaging totalmente ecocompatibile, riducendo peso delle bottiglie e utilizzando esclusivamente cartoni riciclati e sugheri certificati a impronta zero</p>
+                            </div>
+
+                            <div class="col d-flex align-items-start gap-3 py-4">
+                                <div class="obiettivo_icona rounded-circle d-flex align-items-center justify-content-center flex-shrink-0 text-white">
+                                    <i class="bi bi-recycle" aria-hidden="true"></i>
                                 </div>
                                 <p class="obiettivo_testo mb-0">Incremento del riutilizzo dei sottoprodotti della vinificazione, in un'ottica di piena economia circolare e valorizzazione degli scarti</p>
                             </div>
@@ -379,14 +379,14 @@
 
             <!--Sezione Download report di sostenibilità-->
             <section id="download-report" class="p-0 p-md-5">
-                <div class="container-fluid container-md px-0 px-md-3 d-flex justify-content-center ">
+                <div class="container-md px-0 px-md-3">
                     <div class="download-report rounded text-center text-white p-4 p-md-5 mt-0 mt-md-5">
                         <div class="row align-items-center g-4">
                             <div class="col-md-4 text-center">
                                 <img src="images/icona-report.png" alt="Icona report di sostenibilità" class="img-fluid">
                             </div>
                             <div class="col-md-8">
-                                <h3 class="fw-bold">Scarica il nostro Report di Sostenibilità</h3>
+                                <h2 class="fw-bold">Scarica il nostro Report di Sostenibilità</h2>
                                 <p>Scopri i nostri impegni e i risultati raggiunti nel percorso di sostenibilità.</p>
                                 <a href="documenti/bilancio-sostenibilita-2024.pdf" class="btn btn-lg btn-light rounded-pill px-4 mt-3" download aria-label="Scarica il report di sostenibilità">Scarica il Report</a>
                             </div>
@@ -402,17 +402,18 @@
             <div class="container"> 
                 <!--  Social media -->
                 <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-2 pb-3 mb-4 border-bottom">
-                 <p class=" fs-6">I nostri profili social:</p>
+                 <p class=" fs-6 mb-0">I nostri profili social:</p>
                     <!-- Collegamenti ai profili social dell'azienda-->
-                    <div>
-                        <a href="#" aria-label="Facebook" class="me-4 text-reset"><i class="bi bi-facebook" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="Twitter" class="me-4 text-reset"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="Google" class="me-4 text-reset"><i class="bi bi-google" aria-hidden="true"></i></a>
-                        <a href="#" aria-label="Instagram" class="me-4 text-reset"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <div class="d-flex gap-4">
+                        <a href="#" aria-label="Facebook" class="text-reset"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="X" class="text-reset"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Google" class="text-reset"><i class="bi bi-google" aria-hidden="true"></i></a>
+                        <a href="#" aria-label="Instagram" class="text-reset"><i class="bi bi-instagram" aria-hidden="true"></i></a>
                     </div>
                 </div>
+
                 
-            
+                 
                 <div class="text-center text-md-start mt-5" style="padding-right: 0.75rem; padding-left: 0.75rem;">
                     
                     <div class="row mt-3">
@@ -423,29 +424,30 @@
                                 FIRRIATO
                             </h2>
                             <p>
-                                Custodiamo un Terroir unico, preserviamo la biodiversità e promuoviamo la cultura del vino sostenibile nella Sicilia.
+                                Custodiamo un Terroir unico, preserviamo la biodiversità e promuoviamo la cultura del vino sostenibile in Sicilia.
                             </p>
                         </div>
 
                        <!-- Contatti -->
+                         
                         <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <h3 class="text-uppercase fw-bold fs-5 mb-4">Contatti</h3>
-                            <p><i class="bi bi-house-door me-3" aria-hidden="true"></i> Via Trapani 4, Paceco (TP)</p>
-                            <p><i class="bi bi-envelope me-3" aria-hidden="true"></i><a href="mailto:info@firriato.it" class="text-reset" aria-label="Email info Firriato">info@firriato.it</a> - <a href="mailto:privacy@firriato.it" class="text-reset" aria-label="Email privacy Firriato">privacy@firriato.it</a></p>
-                            <p><i class="bi bi-telephone me-3" aria-hidden="true"></i><a href="tel:+390923882755" class="text-reset" aria-label="Telefono Firriato">+39 0923 882755</a></p>
+                            <h2 class="text-uppercase fw-bold fs-5 mb-4">Contatti</h2>
+                            <p><i class="bi bi-house-door me-3" aria-hidden="true"></i>Via Trapani 4, Paceco (TP)</p>
+                            <p><i class="bi bi-envelope me-3" aria-hidden="true"></i><a href="mailto:info@firriato.it" class="text-reset">info@firriato.it</a></p>
+                            <p><i class="bi bi-envelope me-3" aria-hidden="true"></i><a href="mailto:privacy@firriato.it" class="text-reset">privacy@firriato.it</a></p>
+                            <p><i class="bi bi-telephone me-3" aria-hidden="true"></i><a href="tel:+390923882755" class="text-reset">+39 0923 882755</a></p>
                         </div>
                        
                     </div>
                 
                 </div>
+                <!-- Copyright -->
+                <div class="copyright text-center p-4 border-top">
+                    &copy; 2026 Firriato. Tutti i diritti riservati.<br> <small>Progetto didattico realizzato per l'Università Telematica Pegaso. Sito non ufficiale</small>
+                </div>
+                
             </div>
             
-
-            <!-- Copyright -->
-            <div class="copyright text-center p-4 border-top">
-               &copy; 2026 Firriato. Tutti i diritti riservati.<br> <small>Progetto didattico realizzato per l'Università Telematica Pegaso. Sito non ufficiale</small>
-            </div>
-           
         </footer>
         
         <!-- Script framework Bootstrap e script js-->
